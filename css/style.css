@@ -1,4 +1,5 @@
 
+/*? sfondo e container */
 #app{
     height: 100vh;
     width: 100%;
@@ -13,10 +14,7 @@
     background-color: antiquewhite;
 }
 
-.tool-bar{
-    height: 70px;
-    background-color: lightgray;
-}
+/*? generali */
 h5{
     display: inline-block;
 }
@@ -28,11 +26,19 @@ img{
     padding-left: 1px;
 }
 
+/*? tool bar notifiche e ricerca */
+/** tool bar */
+.tool-bar{
+    height: 70px;
+    background-color: lightgray;
+}
+
 .tool-bar > div > i{
     display: block;
     padding-right: 5px;
     
-} 
+}
+/** notifiche */
 .notification{
     height: 80px;
 }
@@ -45,6 +51,7 @@ img{
     align-items: center;
     justify-content: center;
 }
+/** ricerca */
 .input-group{
     height: 90%;
     width: 95%;
@@ -55,4 +62,10 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*? lista contatti */
+.contacts-list{
+    height: calc(100% - 210px);
+    background-color: #009688;
 }
