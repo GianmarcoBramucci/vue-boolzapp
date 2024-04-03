@@ -23,16 +23,34 @@
                     <!-- parte sinistra alta (user and reserch part) -->
                     <div>
                         <!-- parte user -->
-                        <div class="tool-bar">
+                        <div class="tool-bar d-flex justify-content-between align-items-center">
                             <div>
                                 <img src="./img/avatar_io.jpg" alt="user avatar" class="rounded-circle ">
                                 <h5>sofia</h5>
                             </div>
-                            <div>
+                            <div class="d-flex justify-content-between align-items-center">
                                 <i class="fa-solid fa-circle-notch"></i>
                                 <i class="fa-solid fa-message"></i>
                                 <i class="fa-solid fa-ellipsis-vertical"></i>
-                                
+                            </div>
+                        </div>
+                        <!-- parte notifiche -->
+                        <div>
+                            <div class="bg-primary notification d-flex align-items-center">
+                                <span class="rounded-circle text-primary bg-white">
+                                    <i class="fa-solid fa-bell-slash fa-xl"></i>
+                                </span>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <h5>Ricevi notifiche di nuovi messaggi</h5>
+                                    <span>Attiva notifiche desktop</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- parte ricerca -->
+                        <div class="searchChat">
+                            <div class="input-group">
+                                <span class="input-group-text bg-white" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="form-control" placeholder="cerca o inizia nuova chat" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
                         </div>
                     </div>
