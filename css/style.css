@@ -25,6 +25,9 @@ img{
     padding-right: 1px;
     padding-left: 1px;
 }
+span{
+    display: block;
+}
 
 /*? tool bar notifiche e ricerca */
 /** tool bar */
@@ -67,5 +70,33 @@ img{
 /*? lista contatti */
 .contacts-list{
     height: calc(100% - 210px);
-    background-color: #009688;
+    overflow-y: auto;
+    background-color: white;
 }
+.single-contact{
+    height: 70px;
+    border-bottom: 1px gray solid;
+}
+
+div.single-contact >div.d-flex > div.flex-column>span{
+    display: block;
+}
+
+/*? parte destra */
+/** seconda tool bar in alto */
+div.col-8>div.tool-bar{
+    padding: 0;
+    width: 100%;
+    border-left: 1px gray solid;
+}
+.col-8{
+    padding: 0;
+}
+/** chat conteiner */
+.container-chat{
+    height: calc(100% - 140px);
+    background-image: url(../img/mine.jpg);
+    overflow-y: auto;
+}
+
+/** terza tool bar per mandare i messaggi*/
