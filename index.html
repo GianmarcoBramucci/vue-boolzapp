@@ -56,7 +56,7 @@
                     </div>
                     <!-- parte sinistra bassa (contact list part) -->
                     <div class="contacts-list">
-                        <div v-for="contact in contacts " class="single-contact d-flex justify-content-between">
+                        <div v-for="contact in contacts " class="single-contact d-flex justify-content-between" :class="atcvieClass(contact)" @click="changeAtcvieClass(contact)">
                             <div class="d-flex align-items-center">
                                 <img :src="contact.avatar" class="rounded-circle" alt="">
                                 <div class="flex-column">
@@ -73,7 +73,7 @@
                     <!-- parte alta (chat attiva) -->
                     <div class="tool-bar d-flex justify-content-between align-items-center">
                         <div class="d-flex">
-                            <img :src="atcvieContact.avatar" alt="user avatar" class="rounded-circle ">
+                            <img :src="atcvieContact.avatar" alt="user avatar" class="rounded-circle">
                             <div class="flex-column align-items-center">
                                 <h5>{{atcvieContact.name}}</h5>
                                 <span>ultimo</span>
