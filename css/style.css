@@ -102,11 +102,20 @@ div.col-8>div.tool-bar{
     background-size: cover;
     overflow-y: auto;
 }
+/** parte dei messaggi*/
+.message{
+    width: 300px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+}
 .sent{
-    background-color: violet;
+    background-color: yellowgreen;
+    margin-left: auto;
 }
 .received{
-    background-color: yellowgreen;
+    background-color: whitesmoke;
+    margin-right: auto;
 }
 
 /** terza tool bar per mandare i messaggi*/
