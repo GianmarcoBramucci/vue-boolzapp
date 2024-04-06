@@ -15,7 +15,14 @@ Vue.createApp({
         },
         changeAtcvieClass: function(object){
            this.atcvieContact= object;    
-        }
+        },
+            changeStatus: function(object){
+                if(object.status=="received"){
+                    return "received";
+                } else if(object.status=="sent"){
+                    return "sent"
+                }
+            }
     },
     computed:{
     },

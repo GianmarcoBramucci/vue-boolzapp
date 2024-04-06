@@ -87,13 +87,16 @@
                     </div>
                     <!-- conteiner delle chat -->
                     <div class="container-chat">
-                        
+                        <div v-for="atcvieCon in atcvieContact.messages" :class="changeStatus(atcvieCon)">
+                            {{ atcvieCon.message }}
+                        </div>
                     </div>
                     <span class="tool-bar d-flex justify-content-between align-items-center">
                         <i class="fa-solid fa-circle-notch"></i>
                         <input type="text" class="form-control" placeholder="cerca o inizia nuova chat" aria-label="Username" aria-describedby="basic-addon1">
                         <i class="fa-solid fa-circle-notch"></i>
                     </span>
+                    </div>
                 </div>
             </div>
         </div>
